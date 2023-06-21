@@ -1,0 +1,5 @@
+Company,precio,tipo de fee,Cantidad de pagos,garantia,plazo garantía
+La Nación ,8%,anual,1,si,90 días
+Swift,"12,50%",anual,1,no,90 días
+Bitnovo,13%,mensual,16,no,40 días
+Sciodev,"12,5",mensual,18,no,10 días

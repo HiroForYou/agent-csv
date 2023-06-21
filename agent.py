@@ -6,13 +6,15 @@ from os import getenv, environ
 
 load_dotenv()
 
-df = pd.read_csv("./job.csv")
-df = df.fillna(0)
+df1 = pd.read_csv("./job_1.csv")
+df1.fillna(0, inplace=True)
+df2 = pd.read_csv("./job_2.csv")
+df2.fillna(0, inplace=True)
 
 # df.info()
 # df.head()
 agent = create_pandas_dataframe_agent(
-    OpenAI(temperature=0, model_name="text-davinci-003"), df, verbose=True
+    OpenAI(temperature=0, model_name="text-davinci-003"), [df1, df2], verbose=True
 )
 
 
